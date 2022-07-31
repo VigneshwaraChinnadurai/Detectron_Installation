@@ -9,7 +9,8 @@ import numpy as np
 import requests
 
 # Load an image
-res = requests.get("https://live.staticflickr.com/700/33224654191_fdaee2e3f1_c_d.jpg")
+
+res = requests.get("https://images.pexels.com/photos/5483050/pexels-photo-5483050.jpeg?cs=srgb&dl=pexels-cottonbro-5483050.jpg&fm=jpg")
 image = np.asarray(bytearray(res.content), dtype="uint8")
 image = cv2.imdecode(image, cv2.IMREAD_COLOR)
 
