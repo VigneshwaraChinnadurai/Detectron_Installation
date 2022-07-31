@@ -10,7 +10,7 @@ import requests
 
 # Load an image
 
-res = requests.get("https://images.pexels.com/photos/5483050/pexels-photo-5483050.jpeg?cs=srgb&dl=pexels-cottonbro-5483050.jpg&fm=jpg")
+res = requests.get("https://imageio.forbes.com/specials-images/imageserve/717085855/960x0.jpg?format=jpg&width=960")
 image = np.asarray(bytearray(res.content), dtype="uint8")
 image = cv2.imdecode(image, cv2.IMREAD_COLOR)
 
